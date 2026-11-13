@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pizzería Intergaláctica: descubre pizzas del universo con ingredientes gourmet y un servicio de entrega rápida."
+    />
+    <title>Pizzería Intergaláctica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand-block">
+          <div class="brand-mark">PI</div>
+          <div>
+            <p class="eyebrow">Estación de pizza cósmica</p>
+            <h1>Pizzería Intergaláctica</h1>
+          </div>
+        </div>
+
+        <nav class="topnav" aria-label="Navegación principal">
+          <a href="#menu">Menú</a>
+          <a href="#ofertas">Ofertas</a>
+          <a href="#pedido">Pedido</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow accent">Envío interestelar 30 min</p>
+            <h2>Pizza para viajeros del espacio.</h2>
+            <p>
+              Sabor galáctico, masa artesanal y toppings que hacen vibrar cada órbita.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#menu">Ver menú</a>
+              <button class="button secondary" type="button">Reservar mesa</button>
+            </div>
+            <ul class="hero-stats" aria-label="Estadísticas de la pizzería">
+              <li><strong>4.9/5</strong><span>valoración</span></li>
+              <li><strong>1.2k</strong><span>pedidos</span></li>
+              <li><strong>24/7</strong><span>atención</span></li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="pizza-card">
+              <div class="pizza-slice slice-1"></div>
+              <div class="pizza-slice slice-2"></div>
+              <div class="pizza-slice slice-3"></div>
+              <div class="pizza-slice slice-4"></div>
+              <div class="pizza-core"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="features" id="ofertas">
+          <article>
+            <span>🚀</span>
+            <h3>Entrega rápida</h3>
+            <p>Cohetes de entrega con tiempos de 30 a 45 minutos.</p>
+          </article>
+          <article>
+            <span>🌙</span>
+            <h3>Ingredientes únicos</h3>
+            <p>Quesos premium y salsas inspiradas en el universo.</p>
+          </article>
+          <article>
+            <span>⭐</span>
+            <h3>Especial del mes</h3>
+            <p>Descubre la pizza Nebulosa de queso azul y trufa.</p>
+          </article>
+        </section>
+
+        <section class="menu-section" id="menu">
+          <div class="section-heading">
+            <p class="eyebrow accent">Menú espacial</p>
+            <h2>Lo más solicitado del cosmos</h2>
+          </div>
+
+          <div id="menu-container" class="menu-grid" aria-live="polite"></div>
+        </section>
+
+        <aside class="cart-panel" id="pedido" aria-live="polite">
+          <div class="cart-header">
+            <div>
+              <p class="eyebrow accent">Tu pedido</p>
+              <h3>Carrito de compra</h3>
+            </div>
+            <button id="vaciar-carrito" class="text-button" type="button">Vaciar</button>
+          </div>
+
+          <div id="carrito-items" class="cart-items"></div>
+
+          <div class="cart-summary">
+            <div>
+              <span>Subtotal</span>
+              <strong id="subtotal">$0</strong>
+            </div>
+            <div>
+              <span>Envío</span>
+              <strong id="envio">$0</strong>
+            </div>
+            <div class="total-row">
+              <span>Total</span>
+              <strong id="total">$0</strong>
+            </div>
+          </div>
+
+          <button class="button primary wide" type="button">Finalizar pedido</button>
+        </aside>
+      </main>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
